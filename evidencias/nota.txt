@@ -1,0 +1,41 @@
+REGISTRO DE EVIDENCIAS DE TESTING
+
+Proyecto: Proyecto Integrador QA
+Tipo de testing: Testing manual
+Tester: Ailín Arias
+Fecha: 10/2
+-------------------------------------------------
+
+FUNCIONALIDADES TESTEADAS
+
+1. Login de usuario
+2. Registro de usuario
+3. Validaciones de campos obligatorios
+4. Manejo de sesión
+5. Validaciones de seguridad básicas
+
+--------------------------------------------------
+
+RESULTADOS GENERALES
+
+Se ejecutaron los casos de prueba definidos en el archivo casos-prueba.txt.
+
+Se verificó el comportamiento del sistema ante entradas válidas e inválidas.
+Se validaron mensajes de error, restricciones de campos y funcionamiento general de las funcionalidades testeadas.
+
+--------------------------------------------------
+
+EVIDENCIAS
+
+Las evidencias se encuentran almacenadas en esta carpeta e incluyen capturas de pantalla del resultado de las pruebas realizadas.
+
+--------------------------------------------------
+
+OBSERVACIONES
+
+No se detectaron fallas críticas durante la ejecución de las pruebas.
+Las validaciones básicas del sistema funcionan según lo esperado.
+
+--------------------------------------------------
+
+FIN DEL REGISTRO
