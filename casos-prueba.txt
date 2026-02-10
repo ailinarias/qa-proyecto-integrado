@@ -1,0 +1,244 @@
+Sistema probado: Buggy Cars Rating
+Tipo de testing: Manual
+Módulos cubiertos: Registro, Login, Sesión
+----------------------------------------------------------------------------
+TC01 – Registro con contraseña menor a longitud mínima
+
+Precondición: Usuario no registrado
+
+Datos:
+Email: ailinnataliaarias@gmail.com
+
+Password: 12345
+
+Pasos:
+
+Ingresar a la página
+
+Acceder al formulario de registro
+
+Completar los campos obligatorios
+
+Confirmar registro
+
+Resultado esperado:
+El sistema rechaza el registro e informa que la contraseña no cumple requisitos mínimos.
+
+Resultado obtenido:
+Se muestra error indicando longitud insuficiente.
+
+Estado: NO PASA
+----------------------------------------------------------------------------
+TC02 – Registro con contraseña sin longitud suficiente
+
+Precondición: Usuario no registrado
+
+Datos:
+Password: 123456
+
+Pasos:
+
+Acceder a registro
+
+Completar formulario
+
+Confirmar
+
+Resultado esperado:
+El sistema debe rechazar la contraseña.
+
+Resultado obtenido:
+Mensaje indicando contraseña inválida.
+
+Estado: NO PASA
+----------------------------------------------------------------------------
+TC03 – Registro con contraseña sin minúsculas
+
+Precondición: Usuario no registrado
+
+Datos:
+Password: 123456789
+
+Resultado esperado:
+Sistema solicita incluir caracteres en minúscula.
+
+Resultado obtenido:
+Error indicando ausencia de minúsculas.
+
+Estado: NO PASA
+----------------------------------------------------------------------------
+TC04 – Registro con contraseña sin mayúsculas
+
+Precondición: Usuario no registrado
+
+Datos:
+Password: 123456789a
+
+Resultado esperado:
+Sistema solicita incluir caracteres en mayúscula.
+
+Resultado obtenido:
+Error indicando ausencia de mayúsculas.
+
+Estado: NO PASA
+----------------------------------------------------------------------------
+TC05 – Registro con contraseña sin símbolo
+
+Precondición: Usuario no registrado
+
+Datos:
+Password: 123456789aA
+
+Resultado esperado:
+Sistema solicita incluir símbolo.
+
+Resultado obtenido:
+Error indicando falta de símbolo.
+
+Estado: NO PASA
+----------------------------------------------------------------------------
+TC06 – Registro válido
+
+Precondición: Usuario no registrado
+
+Datos:
+Password: 123456789aA-
+
+Resultado esperado:
+Sistema permite registro exitoso.
+
+Resultado obtenido:
+Registro completado correctamente.
+
+Estado: PASA
+----------------------------------------------------------------------------
+TC07 – Registro con email inválido
+
+Precondición: Usuario no registrado
+
+Datos:
+Email: ailin@
+
+Resultado esperado:
+Sistema rechaza email inválido.
+
+Resultado obtenido:
+Sistema permite registro.
+
+Estado: NO PASA
+----------------------------------------------------------------------------
+TC08 – Login con credenciales válidas
+
+Precondición: Usuario registrado
+
+Pasos:
+
+Ingresar a login
+
+Completar credenciales válidas
+
+Confirmar
+
+Resultado esperado:
+Sistema permite acceso.
+
+Resultado obtenido:
+Usuario autenticado correctamente.
+
+Estado: PASA
+----------------------------------------------------------------------------
+TC09 – Login válido sin redirección
+
+Precondición: Usuario registrado
+
+Resultado esperado:
+Sistema redirige a página principal.
+
+Resultado obtenido:
+Usuario queda en pantalla anterior.
+
+Estado: NO PASA
+----------------------------------------------------------------------------
+TC10 – Registro sin nombre
+
+Resultado esperado:
+Sistema solicita completar campo obligatorio.
+----------------------------------------------------------------------------
+TC11 – Registro sin apellido
+
+Resultado esperado:
+Sistema solicita completar campo obligatorio.
+----------------------------------------------------------------------------
+TC12 – Registro sin email
+
+Resultado esperado:
+Sistema solicita completar campo obligatorio.
+----------------------------------------------------------------------------
+TC13 – Registro sin contraseña
+
+Resultado esperado:
+Sistema impide registro.
+----------------------------------------------------------------------------
+TC14 – Registro con contraseñas diferentes
+
+Resultado esperado:
+Sistema informa que contraseñas no coinciden.
+----------------------------------------------------------------------------
+TC15 – Registro con email ya existente
+
+Resultado esperado:
+Sistema impide registro duplicado.
+----------------------------------------------------------------------------
+TC16 – Registro con campos vacíos
+
+Resultado esperado:
+Sistema solicita completar formulario.
+----------------------------------------------------------------------------
+TC17 – Registro con caracteres especiales en nombre
+
+Resultado esperado:
+Sistema valida formato permitido.
+----------------------------------------------------------------------------
+TC18 – Registro con espacios en contraseña
+
+Resultado esperado:
+Sistema valida contraseña correctamente.
+----------------------------------------------------------------------------
+TC19 – Registro con contraseña extremadamente larga
+
+Resultado esperado:
+Sistema valida límite máximo permitido.
+----------------------------------------------------------------------------
+TC20 – Login con contraseña incorrecta
+
+Resultado esperado:
+Sistema muestra error de autenticación.
+----------------------------------------------------------------------------
+TC21 – Login con email inexistente
+
+Resultado esperado:
+Sistema informa usuario inexistente.
+----------------------------------------------------------------------------
+TC22 – Login con campos vacíos
+
+Resultado esperado:
+Sistema solicita completar credenciales.
+----------------------------------------------------------------------------
+TC23 – Login con email inválido
+
+Resultado esperado:
+Sistema valida formato de email.
+----------------------------------------------------------------------------
+TC24 – Logout exitoso
+
+Precondición: Usuario logueado
+
+Resultado esperado:
+Sistema cierra sesión correctamente.
+----------------------------------------------------------------------------
+TC25 – Sesión expirada
+
+Precondición: Usuario inactivo
+
+Resultado esperado:
+Sistema solicita nuevo login.
